@@ -35,6 +35,5 @@ const selectionSort = (arr) => {
   return newArr;
 }
 
-console.log(
-  selectionSort(arrSort)
-);
+
+selectionSort(arrSort);
