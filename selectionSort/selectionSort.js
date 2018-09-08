@@ -1,14 +1,3 @@
-const arrSort = [
-  { name: 'wilco', views: 111 },
-  { name: 'Radio head', views: 156 },
-  { name: 'the black keys', views: 35 },
-  { name: 'Kishore kumar', views: 141 },
-  { name: 'the strokes', views: 61 },
-  { name: 'neutral milk hotel', views: 94 },
-  { name: 'beck', views: 88 },
-];
-
-
 const maxIdx = (arr) => {
   let max = { views: 0 };
 
@@ -35,5 +24,13 @@ const selectionSort = (arr) => {
   return newArr;
 }
 
-
-selectionSort(arrSort);
+// const arrSort = [
+//   { name: 'wilco', views: 111 },
+//   { name: 'Radio head', views: 156 },
+//   { name: 'the black keys', views: 35 },
+//   { name: 'Kishore kumar', views: 141 },
+//   { name: 'the strokes', views: 61 },
+//   { name: 'neutral milk hotel', views: 94 },
+//   { name: 'beck', views: 88 },
+// ];
+// selectionSort(arrSort);

@@ -1,6 +1,3 @@
-
-const arrQuickSort = [8,3,22,37,10,15,44,99,36,46,95,34,56,67,2];
-
 const quickSort = (arr) => {
   if (arr.length < 2) return arr;
   const more = [];
@@ -16,4 +13,5 @@ const quickSort = (arr) => {
   }
 }
 
-quickSort(arrQuickSort);
+// const arrQuickSort = [8,3,22,37,10,15,44,99,36,46,95,34,56,67,2];
+// quickSort(arrQuickSort);
