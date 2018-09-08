@@ -1,5 +1,15 @@
 const quickSort = (arr) => {
+  let temp = 0;
   if (arr.length < 2) return arr;
+
+  if (arr.length === 2) {
+    if (arr[0] > arr[1]) {
+      temp = arr[0];
+      arr[0] = arr[1];
+      arr[1] = temp;
+    }
+  }
+
   const more = [];
   const less = [];
   const first = arr[0];
@@ -11,7 +21,9 @@ const quickSort = (arr) => {
       less.push(arr[i]);
     }
   }
+
+  return quickSort(less).concat(arr[0]).concat(quickSort(more));
 }
 
-// const arrQuickSort = [8,3,22,37,10,15,44,99,36,46,95,34,56,67,2];
-// quickSort(arrQuickSort);
+const arrQuickSort = [10, 5, 2, 3, 33, 2, 8, 10];
+console.log(quickSort(arrQuickSort));
