@@ -12,5 +12,5 @@ const quickSort = (arr) => {
   return quickSort(less).concat(support).concat(quickSort(more));
 }
 
-const arrQuickSort = [10, 5, 2, 3, 33, 2, 8, 10];
-console.log(quickSort(arrQuickSort));
+//const arrQuickSort = [10, 5, 2, 3, 33, 2, 8, 10];
+//console.log(quickSort(arrQuickSort));
